@@ -6,6 +6,9 @@ import PackageDescription
 let package = Package(
     name: "CINewsletterWebhooks",
     platforms: [.macOS(.v11)],
+    products: [
+        .executable(name: "CampaignSent", targets: ["CampaignSent"])
+    ],
     dependencies: [
         .package(url: "https://github.com/swift-cloud/Compute", exact: "2.6.0")
     ],
